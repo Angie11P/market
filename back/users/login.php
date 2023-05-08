@@ -7,6 +7,7 @@
     $result=$conn->query($sql);
     if($result->num_rows>0){
         echo"User has been found suceessfully.You're login";
-    }else{ "Verify your data";
+    }else{ 
+        "Verify your data";
     }
 ?>
