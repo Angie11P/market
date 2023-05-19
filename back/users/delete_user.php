@@ -2,7 +2,7 @@
     include("../config/cnx_db.php");
     $userId=$_GET['id'];
 
-$sql="DELETE FROM users WHERE id='$userId'";
+    $sql="DELETE FROM users WHERE id='$userId'";
     if($conn->query($sql)===TRUE){
         if($conn->affected_rows>0){
             echo"<script>alert('El usuario se elimino correctamente')</script>";
